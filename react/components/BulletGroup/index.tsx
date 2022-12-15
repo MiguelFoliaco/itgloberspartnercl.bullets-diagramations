@@ -3,7 +3,7 @@ import { useDevice } from 'vtex.device-detector';
 import { useListContext, ListContextProvider } from "vtex.list-context";
 import { useCssHandles } from "vtex.css-handles"
 import { BulletSchema } from './BulletTypes';
-import { BulletAsList } from "./modules/BulletAsList"
+import { BulletAsList } from "./modules/BulletAsList";
 
 export interface IBulletGroup {
   bullets: BulletSchema;
@@ -18,6 +18,8 @@ const index = ({
   const { isMobile } = useDevice();
   const { list } = useListContext() || []
   const _bullets = BulletAsList(bullets, isMobile)
+
+
 
   const newListContextValue = list.concat(_bullets)
   return (
@@ -35,6 +37,7 @@ const index = ({
             {children}
           </div>
       }
+
     </ListContextProvider>
   )
 }

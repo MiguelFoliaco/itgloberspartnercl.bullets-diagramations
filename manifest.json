@@ -14,6 +14,7 @@
     "vtex.native-types": "0.x",
     "vtex.list-context": "0.x",
     "vtex.device-detector": "0.x",
+    "vtex.store-graphql": "2.x",
     "vtex.css-handles": "0.x"
   },
   "registries": [

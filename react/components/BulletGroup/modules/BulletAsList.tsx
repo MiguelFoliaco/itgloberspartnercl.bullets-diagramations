@@ -4,6 +4,7 @@ import { BulletSchema } from '../BulletTypes'
 
 export const BulletAsList = (bullets: BulletSchema, isMobile: boolean) => {
 
+
   return (
 
     bullets.map((e, i) => (
